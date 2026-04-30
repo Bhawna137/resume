@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhawna Rani | SOC Analyst Portfolio</title>
+    <style>
+        :root {
+            --primary-green: #00ff41;
+            --dark-bg: #0d1117;
+            --text-gray: #c9d1d9;
+            --card-bg: #161b22;
+        }
 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-gray);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1000');
+            background-size: cover;
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 2px solid var(--primary-green);
+        }
+
+        h1 { color: var(--primary-green); margin: 0; font-size: 2.5rem; }
+        .subtitle { font-size: 1.2rem; color: #8b949e; }
+
+        .container { max-width: 900px; margin: auto; padding: 2rem; }
+
+        .section-title {
+            border-left: 4px solid var(--primary-green);
+            padding-left: 10px;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #30363d;
+            transition: 0.3s;
+        }
+
+        .card:hover { border-color: var(--primary-green); }
+
+        .project-tag {
+            background: rgba(0, 255, 65, 0.1);
+            color: var(--primary-green);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+
+        .contact-links a {
+            color: var(--primary-green);
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        footer { text-align: center; padding: 2rem; font-size: 0.8rem; color: #484f58; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>BHAWNA RANI</h1>
+    <p class="subtitle">Aspiring SOC Analyst | Cybersecurity Enthusiast</p>
+    <div class="contact-links">
+        <a href="mailto:bhawna301997rani@gmail.com">Email</a>
+        <a href="https://linkedin.com/in/bhawna-rani-32799a249">LinkedIn</a>
+        <a href="https://github.com/BHAWNA1300">GitHub</a>
+    </div>
+</header>
+
+<div class="container">
+    
+    <section id="about">
+        <h2 class="section-title">Professional Summary</h2>
+        <p>Results-oriented professional with 4 years of experience transitioning into <b>Cybersecurity</b>. Passionate about threat hunting, incident response, and vulnerability management. Proven track record in analytical roles at Accenture and GUS Global.</p>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Technical Arsenal</h2>
+        <div class="skills-grid">
+            <div class="card">
+                <h3>Security</h3>
+                <p>SOC Operations, SIEM Fundamentals, SQL Injection Mitigation, OWASP Top 10.</p>
+            </div>
+            <div class="card">
+                <h3>Tools</h3>
+                <p>Wireshark, Burp Suite, Nmap, SQLmap, Metasploit.</p>
+            </div>
+            <div class="card">
+                <h3>Analysis</h3>
+                <p>Data Annotation, Log Analysis, Vulnerability Assessment (VAPT).</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Key Projects</h2>
+        <div class="card">
+            <h3>SQL Injection Detection & Mitigation <span class="project-tag">Cybersecurity</span></h3>
+            <p>Developed a laboratory environment to simulate SQLi attacks. Implemented defense mechanisms including input validation and prepared statements to secure vulnerable databases.</p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="card">
+            <h4>Advisory Associate | Accenture</h4>
+            <p>Focused on data annotation and AI training for search accuracy, developing a keen eye for pattern recognition and technical anomalies.</p>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    &copy; 2026 Bhawna Rani | Secured Portfolio
+</footer>
+
+</body>
+</html>
